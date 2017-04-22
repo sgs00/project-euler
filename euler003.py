@@ -11,7 +11,7 @@ What is the largest prime factor of the number 600851475143?
 def largest_prime_factor(n):
     i = 2
     f = None
-    while i * i < n:
+    while i * i <= n:
 
         if n % i:
             i += 1
