@@ -16,10 +16,10 @@ Find the product abc.
 def pythagorean_1000():
 
     for a in range(1, 1000):
-        for b in range(1, 1000):
-            for c in range(1, 1000):
-                if a + b + c == 1000 and is_pythagorean(a, b, c):
-                    return a*b*c
+        for b in range(1, 1000-a):
+            c = 1000 - a - b
+            if is_pythagorean(a, b, c):
+                return a*b*c
 
 
 def is_pythagorean(a, b, c):
