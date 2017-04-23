@@ -9,10 +9,10 @@ What is the 10001st prime number?
 """
 
 
-def prime_1001():
+def prime_10001():
     x = 2
     i = 1
-    while i != 1001:
+    while i != 10001:
         x += 1
         if is_prime(x):
             i += 1
@@ -26,4 +26,4 @@ def is_prime(n):
 
 
 if __name__ == "__main__":
-    print(prime_1001())
+    print(prime_10001())
