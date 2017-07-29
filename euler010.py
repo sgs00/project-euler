@@ -16,7 +16,7 @@ def sum_primes_below_2_million():
 def eratosthenes(n):
     yield 2
     sieve = set()
-    for p in range(3, n*1, 2):
+    for p in range(3, n, 2):
         if p not in sieve:
             yield p
             sieve.update(range(p*p, n+1, p+p))
